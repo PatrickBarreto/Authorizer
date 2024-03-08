@@ -1,0 +1,20 @@
+{
+    "name":"patrick-barreto/authorizer",
+    "description":"This repository is an Authorizer, it will provide Auth resources for an user, resources like JWT Token, Build Access-Token, and others authorization layers",
+    "type":"library",
+    "license": "GPL-3.0-or-later",
+    "author": [
+        {
+            "name": "Patrick Barreto"
+        }
+    ],
+    "minimum-stability": "stable",
+    "autoload": {
+        "psr-4": {
+            "Authorizer\\": "src/"
+        }
+    },
+    "require": {
+        "php":">=7.0"
+    }
+}
