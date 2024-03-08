@@ -16,7 +16,7 @@ class JWT {
     }
   
 
-    public static function createJsonWebToken(JWTPayload $payload) {
+    public static function createToken(JWTPayload $payload) {
         $header = base64_encode(json_encode(['alg' => 'HS256', 'typ' => 'JWT']));
         $payload = base64_encode(json_encode((array)$payload));
         
@@ -70,7 +70,7 @@ class JWT {
         return json_decode(base64_decode($payload));
     }
 
-    
+
     private static function generateBase64SignatueToken(string $header, string $payload, string $secrectKey, string $algo = 'sha256') {
         return hash_hmac($algo, $header.$payload, $secrectKey);
     }
