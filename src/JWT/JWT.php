@@ -5,6 +5,12 @@ class JWT {
 
     private static string $secrectKey;
 
+
+    public static function generateSecureSecretKey($length = 32){
+        return (bin2hex(random_bytes($length)));
+    }
+
+
     public static function fillSecretKey($secret_key) {
         self::$secrectKey = $secret_key;
     }
@@ -63,12 +69,6 @@ class JWT {
         $payload = explode('.', $token)[1];
         return json_decode(base64_decode($payload));
     }
-
-
-    public static function generateSecureSecretKey($length = 32){
-        return (bin2hex(random_bytes($length)));
-    }
-
 
     private static function generateBase64SignatueToken(string $header, string $payload, string $secrectKey, string $algo = 'sha256') {
         return hash_hmac($algo, $header.$payload, $secrectKey);
