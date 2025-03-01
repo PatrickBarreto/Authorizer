@@ -1,0 +1,12 @@
+{
+  "name": "authorizer",
+  "version": "1.0.0",
+  "description": "This repository is an Authorizer, it will provide Auth resources for an user, resources like JWT Token, Build Access-Token, and others authorization layers",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
