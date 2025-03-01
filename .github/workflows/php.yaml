@@ -40,6 +40,9 @@ jobs:
         with:
           node-version: '20'
       
+      - name: npm init
+        run: npm init -y
+
       - name: semantic-release install
         run: npm install --save-dev semantic-release @semantic-release/changelog @semantic-release/git @semantic-release/github @semantic-release/commit-analyzer @semantic-release/release-notes-generator
 
