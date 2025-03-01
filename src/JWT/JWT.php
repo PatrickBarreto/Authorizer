@@ -75,4 +75,5 @@ class JWT {
         return hash_hmac($algo, $header.$payload, $secrectKey);
     }
     
+    
 }
