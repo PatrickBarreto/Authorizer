@@ -1,10 +1,12 @@
 {
     "branches": ["main"],
+    "repositoryUrl": "https://github.com/PatrickBarreto/Authorizer",
+    "tagFormat": "v${version}",
     "plugins": [
-        "@semantic-release/commit-analyser",
-        "@semantic-release/release-notes-generator",
-        "@semantic-release/changelog",
-        "@semantic-release/git",
-        "@semantic-release/github"
+      "@semantic-release/commit-analyzer",
+      "@semantic-release/release-notes-generator",
+      "@semantic-release/changelog",
+      "@semantic-release/git",
+      "@semantic-release/github"
     ]
-}
+  }
