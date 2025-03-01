@@ -40,12 +40,12 @@ jobs:
         with:
           node-version: '20'
       
+      - name: semantic-release install
+        run: npm install --save-dev semantic-release @semantic-release/changelog @semantic-release/git @semantic-release/github @semantic-release/commit-analyzer @semantic-release/release-notes-generator
+    
       - name: Instalar dependências
         run: npm ci
 
-      - name: semantic-release install
-        run: npm install --save-dev semantic-release @semantic-release/changelog @semantic-release/git @semantic-release/github @semantic-release/commit-analyzer @semantic-release/release-notes-generator
-        
       - name: semantic-release execution
         env: 
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
