@@ -33,7 +33,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: code checkout
-        uses: actions/checkout@v4
+        uses: actions/checkout@24
 
       - name: node install
         uses: actions/setup-node@24
