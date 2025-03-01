@@ -74,6 +74,5 @@ class JWT {
     private static function generateBase64SignatueToken(string $header, string $payload, string $secrectKey, string $algo = 'sha256') {
         return hash_hmac($algo, $header.$payload, $secrectKey);
     }
-
-
+    
 }
