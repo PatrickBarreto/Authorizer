@@ -69,4 +69,4 @@ jobs:
         env: 
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           DEBUG: semantic-release:*
-        run: npx -p @semantic-release/commit-analyzer echo "Module is installed"
+        run: npx semantic-release
