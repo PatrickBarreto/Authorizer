@@ -33,10 +33,10 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: code checkout
-        uses: actions/checkout@24
+        uses: actions/checkout@v4
 
       - name: node install
-        uses: actions/setup-node@24
+        uses: actions/setup-node@v4
         with:
           node-version: '20'
       
