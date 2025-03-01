@@ -43,8 +43,23 @@ jobs:
       - name: npm init
         run: npm init -y
 
-      - name: semantic-release install
-        run: npm install --save-dev semantic-release @semantic-release/changelog @semantic-release/git @semantic-release/github @semantic-release/commit-analyzer @semantic-release/release-notes-generator
+      - name: Install semantic-release
+        run: npm install --save-dev semantic-release
+      
+      - name: Install @semantic-release/changelog
+        run: npm install --save-dev @semantic-release/changelog
+      
+      - name: Install @semantic-release/git
+        run: npm install --save-dev @semantic-release/git
+      
+      - name: Install @semantic-release/github
+        run: npm install --save-dev @semantic-release/github
+      
+      - name: Install @semantic-release/commit-analyzer
+        run: npm install --save-dev @semantic-release/commit-analyzer
+      
+      - name: Install @semantic-release/release-notes-generator
+        run: npm install --save-dev @semantic-release/release-notes-generator
 
       - name: semantic-release execution
         env: 
